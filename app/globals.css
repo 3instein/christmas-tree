@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.photo-tree {
+  display: flex;
+  flex-direction: column; /* Stacks rows vertically */
+  gap: 10px; /* Space between each row */
+}
+
+.photo-row {
+  display: flex;
+  justify-content: center; /* Center photos within the row */
+  gap: 10px; /* Space between each photo in the row */
+  margin-bottom: 10px;
+}
+
+.photo-row img {
+  max-width: 100%;
+  height: auto;
+}
+
+
