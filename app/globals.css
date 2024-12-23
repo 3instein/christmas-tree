@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.photo-tree {
+  display: flex;
+  flex-direction: column; /* Stacks rows vertically */
+  gap: 10px; /* Space between each row */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.photo-row {
+  display: flex;
+  justify-content: center; /* Center photos within the row */
+  gap: 10px; /* Space between each photo in the row */
+  margin-bottom: 10px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.photo-row img {
+  max-width: 100%;
+  height: auto;
 }
+
+
